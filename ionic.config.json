@@ -1,0 +1,8 @@
+{
+  "name": "wydsFront",
+  "app_id": "5803bc5d",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  }
+}
