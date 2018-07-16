@@ -7,12 +7,16 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Active</ion-title>
+    <ion-title>Active Connections</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
+<ion-content>
+
+<ion-list>
+  <ion-item *ngFor="let Connection of Connections">{{Connection}}</ion-item>
+</ion-list>
 
 </ion-content>

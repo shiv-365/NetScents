@@ -8,7 +8,7 @@ import { ListPage } from '../pages/list/list';
 import { ActiveConnections } from '../pages/active/active';
 import { History } from '../pages/history/history';
 import { Notes } from '../pages/notes/notes';
-import {SettingsPage} from '../pages/settings/settings'
+import {Settings} from '../pages/settings/settings'
 
 
 
@@ -21,7 +21,7 @@ export class MyApp {
 
   rootPage: any = HomePage;
 
-  pages: Array<{title: string, component: any}>;
+  pages: Array<{title: string, component: any, icon: string}>;
 
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
    
@@ -31,12 +31,12 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Home', component: HomePage },
+      { title: 'Home', component: HomePage, icon: 'home'},
       //{ title: 'ListOfLists', component: ListPage },
-      { title: 'Active Connections', component: ActiveConnections },
-      { title: 'History', component: History },
-      { title: 'Notes', component: Notes },
-      {title: 'Settings', component: SettingsPage}
+      { title: 'Active Connections', component: ActiveConnections, icon: 'wifi'},
+      { title: 'History', component: History, icon: 'archive' },
+      { title: 'Notes', component: Notes, icon: 'create' },
+      {title: 'Settings', component: Settings, icon: 'settings'}
     ];
 
   }

@@ -1,13 +1,13 @@
 import { NgModule } from '@angular/core';
 import { IonicPageModule } from 'ionic-angular';
-import { ActivePage } from './active';
+import { ActiveConnections } from './active';
 
 @NgModule({
   declarations: [
-    ActivePage,
+    ActiveConnections,
   ],
   imports: [
-    IonicPageModule.forChild(ActivePage),
+    IonicPageModule.forChild(ActiveConnections),
   ],
 })
 export class ActivePageModule {}

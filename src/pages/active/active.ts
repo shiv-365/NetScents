@@ -15,11 +15,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class ActiveConnections {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+  connections: any;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad ActivePage');
+  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  
+
+  this.connections = [
+    'Device 1',
+    'Device 2'
+
+  ];
   }
 
 }
