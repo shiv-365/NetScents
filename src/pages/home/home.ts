@@ -7,6 +7,14 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
+  tab1Root: any = 'Home';
+  tab2Root: any = 'Active Connections'
+  tab3Root: any = 'History';
+  tab4Root: any = 'Notes';
+  tab5Root: any = 'Settings';
+
+
+
   constructor(public navCtrl: NavController) {
 
   }
