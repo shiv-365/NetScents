@@ -40,7 +40,7 @@ public class Capture {
 
         };
         try {
-            int maxPackets = 40;
+            int maxPackets = 10;
             handle.loop(maxPackets, listener);
         } catch (InterruptedException e) {
             e.printStackTrace();

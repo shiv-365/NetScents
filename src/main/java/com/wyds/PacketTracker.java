@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class PacketTracker {
     public static void main(String[] args) throws PcapNativeException, NotOpenException {
 
-        //SpringApplication.run(PacketTracker.class, args);
+        SpringApplication.run(PacketTracker.class, args);
         Capture c = new Capture();
         c.capturePack();
 

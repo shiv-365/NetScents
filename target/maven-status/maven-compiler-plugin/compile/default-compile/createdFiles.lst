@@ -1,2 +1,4 @@
+com/wyds/PacketRepo/packetRepository.class
+com/wyds/packets/PacketParserEntity.class
 com/wyds/packets/Capture.class
 com/wyds/PacketTracker.class
