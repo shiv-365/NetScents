@@ -13,34 +13,13 @@ public class PacketEntity {
     @Column(name = "id")
     private Long id;
 
-    public Long getId() {
-        return id;
-    }
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-
     @Column(name = "packet")
-    String packet;
-
-    public String getPacket() {
-        return packet;
-    }
-    public void setPacket(String packet) {
-        this.packet = packet;
-    }
-
+    private String packet;
 
     @Column(name = "packetID")
     private Integer packetID;
 
-    public Integer getPacketID() {
-        return packetID;
-    }
-    public void setPacketID(Integer packetID) {
-        this.packetID = packetID;
-    }
+
 
 
 
@@ -56,7 +35,27 @@ public class PacketEntity {
 
 
 
+    public Long getId() {
+        return id;
+    }
+    public void setId(Long id) {
+        this.id = id;
+    }
 
+    public Integer getPacketID() {
+        return packetID;
+    }
+    public void setPacketID(Integer packetID) {
+        this.packetID = packetID;
+    }
+
+
+    public String getPacket() {
+        return packet;
+    }
+    public void setPacket(String packet) {
+        this.packet = packet;
+    }
 
 
 }
