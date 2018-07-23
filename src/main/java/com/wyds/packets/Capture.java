@@ -7,6 +7,7 @@ import java.io.IOException;
 
 public class Capture {
 
+
     public void capturePack() throws PcapNativeException, NotOpenException {
 
         int snapShotLength = 65536;
@@ -22,37 +23,34 @@ public class Capture {
 
         PcapDumper dumper = handle.dumpOpen("output.pcap");
 
-        //anonymous class
+        /**
+           @param anonymous class
+         */
         PacketListener listener = packet -> {
-
-            System.out.println(handle.getTimestamp());
-            System.out.println(packet);
-            //System.out.println(packet.toString());
-
-
 
             try {
                 dumper.dump(packet, handle.getTimestamp());
             } catch (NotOpenException e) {
-                e.printStackTrace();
+               e.printStackTrace();
             }
 
 
         };
+
+        /**
+         * @param maxPackets, change this to desired amount. maybe a while loop?
+         */
         try {
-            int maxPackets = 10;
+            int maxPackets = 20;
             handle.loop(maxPackets, listener);
         } catch (InterruptedException e) {
-            e.printStackTrace();
+           e.printStackTrace();
         }
 
 
         PcapStat stats = handle.getStats();
 
         System.out.println("Packets received: " + stats.getNumPacketsReceived());
-        System.out.println("Packets dropped: " + stats.getNumPacketsDropped());
-        System.out.println("Packets captured: "+ stats.getNumPacketsCaptured());
-
 
         dumper.close();
         handle.close();

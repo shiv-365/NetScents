@@ -14,6 +14,7 @@
       <configuration>
         <fileset id="fileset" name="PacketTracker" removed="false">
           <file>file://$MODULE_DIR$/src/main/java/com/wyds/packets/PacketTracker.java</file>
+          <file>file://$MODULE_DIR$/src/main/java/com/wyds/PacketTracker.java</file>
         </fileset>
       </configuration>
     </facet>
