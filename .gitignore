@@ -1,0 +1,8 @@
+# Created by .ignore support plugin (hsz.mobi)
+.idea/libraries/Maven__org_apache_commons_commons_pool2_2_5_0.xml
+.idea/libraries/Maven__redis_clients_jedis_2_7_2.xml
+target/classes/com/wyds/Loader/
+target/classes/com/wyds/config/
+target/generated-sources/
+target/generated-test-sources/
+target/test-classes/

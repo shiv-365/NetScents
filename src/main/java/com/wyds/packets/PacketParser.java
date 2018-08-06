@@ -9,7 +9,6 @@ import io.pkts.packet.TCPPacket;
 import io.pkts.packet.UDPPacket;
 import io.pkts.protocol.Protocol;
 
-import javax.persistence.*;
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
@@ -57,6 +56,7 @@ public class PacketParser {
      * @return packet list of decrypted UDP packets
      */
     public List<String> getPacketList() {
+
         return packetList;
     }
 

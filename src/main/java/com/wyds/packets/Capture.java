@@ -41,7 +41,7 @@ public class Capture {
          * @param maxPackets, change this to desired amount. maybe a while loop?
          */
         try {
-            int maxPackets = 20;
+            int maxPackets = 100;
             handle.loop(maxPackets, listener);
         } catch (InterruptedException e) {
            e.printStackTrace();

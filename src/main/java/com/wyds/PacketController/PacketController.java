@@ -12,7 +12,7 @@ public class PacketController {
 
     @RequestMapping("/")
     public String whatUp(){
-        return " Packet sniffing is awesome. Hello!";
+        return " Packet sniffing is awesome. Hello! The server is up and running.";
     }
 
 
