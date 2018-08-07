@@ -18,20 +18,15 @@ import java.util.HashMap;
 public class PacketEntity implements Serializable {
     private PacketMapper pm = new PacketMapper();
 
-    @Id
+   // @Id
     private String id;
 
-   // @Column(name = "packet")
     @Indexed
     private String packet;
 
-   // @Column(name = "packetID")
-    @Indexed
+    //@Indexed
     private Integer packetID;
 
-
-    @Reference
-    HashMap<PacketEntity, String> packmap;
 
 
     public PacketEntity(String id, Integer packetID, String packet) {
@@ -41,6 +36,9 @@ public class PacketEntity implements Serializable {
     }
 
     public PacketEntity() {
+    }
+    public PacketEntity(String packet){
+        this.packet = packet;
     }
 
 

@@ -13,7 +13,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
 public class PacketTracker {
     public static void main(String[] args) throws PcapNativeException, NotOpenException, IOException {
 
@@ -22,10 +21,15 @@ public class PacketTracker {
         PacketMapper pm = new PacketMapper();
 
         //runners
+        //1. capture
+        //2. parse
+        //3. add to list
+        //4. run spring
         SpringApplication.run(PacketTracker.class, args);
         c.capturePack();
         parser.parseUDP();
-        pm.packet();
+        pm.packetL();
+
 
 
 
